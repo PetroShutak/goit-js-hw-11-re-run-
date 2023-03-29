@@ -96,7 +96,6 @@
   .search-form__button:disabled {
     cursor: default;
   }
-  
   .search-form__button:hover:not(:disabled),
   .search-form__button--focus {
     background-color: #e5e5e5;
