@@ -1,10 +1,9 @@
-export default class GalleryCardsBuilder { // створюємо клас GalleryCardsBuilder з методом buildCards() та buildCard()
-    buildCards(cardsData) { // метод buildCards() приймає масив картинок cardsData
-      return cardsData.map(this.buildCard).join(' '); // викликаємо метод buildCard() для кожного елемента масиву cardsData
-      // і повертаємо масив картинок як рядок через join(' ')
+export default class GalleryCardsBuilder { 
+    buildCards(cardsData) { 
+      return cardsData.map(this.buildCard).join(' '); 
     }
   
-    buildCard(cardData) { // метод buildCard() приймає об'єкт картинки cardData
+    buildCard(cardData) { 
       return `
           <li class="gallery__item">
             <a href="${cardData.largeImageURL}">
@@ -32,5 +31,5 @@ export default class GalleryCardsBuilder { // створюємо клас Galler
             </a>
           </li>
         `;
-    } // використовуємо дані з об'єкта cardData для створення розмітки картки з картинкою і інформацією про неї
+    } 
   }
